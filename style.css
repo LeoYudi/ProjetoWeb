@@ -20,10 +20,9 @@ html, body{
   text-decoration: none;
   color: white;
   height: 100%;
-  padding-right: 1em;
+  margin-right: 1em;
 }
 
 .nav-item:hover{
-  background-color: yellow;
-  color: black;
+  color: yellow;
 }
