@@ -2,7 +2,6 @@ html, body {
   padding: 0;
   margin: 0;
   background-color: black;
-  /* background-color: rgb(100,65,164); */
 }
 
 .container {
@@ -27,30 +26,27 @@ html, body {
 
 .sidebar{
   grid-area: sidebar;
-  background-color: rgb(52, 53, 54);
-  /* border-radius: 25px; */
-  /* margin-left: 10px; */
+  background-color: rgb(66, 65, 65);
+  border-radius: 0 5px 5px 0;
 }
 
 .main{
   border-radius: 25px;
   margin: 10px;
-  /* margin-left: 10px; */
-  /* margin-right: 10px; */
   padding: 10px;
   grid-area: main;
   background-color: black;
-  /* background-color: rgb(52, 53, 54); */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 50px 1fr 50px 2fr;
+  grid-template-rows: 50px 1fr 50px 1fr 1fr;
   row-gap: 10px;
   column-gap: 10px;
   grid-template-areas:
-    "t1 . . ." 
-    "t t t t"
-    "t2 . . ."
-    "ctg ctg ctg ctg"
+    "t1 t1 t1 t1" 
+    "hot hot hot hot"
+    "t2 t2 t2 t2"
+    ". . . ."
+    ". . . .";
 }
 
 .footer{
@@ -82,14 +78,31 @@ html, body {
   align-self: center;
 }
 
-.category{
-  grid-area: ctg;
-  background-color: white;
-  border-radius: 25px;
+.titulo-categoria{
+  color: white;
+  font-family: cursive; 
+  text-shadow: 3px 0px 0px black;
+  align-self: center;
 }
 
 .trending{
-  grid-area: t;
-  background-color: white;
+  grid-area: hot;
+  background-color: rgb(66, 65, 65);
   border-radius: 25px;
+}
+
+.categoria{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(66, 65, 65);
+  border-radius: 25px;
+}
+
+.categoria:hover{
+  background-color: blue;
+}
+
+.categoria:active{
+  background-color: red;
 }
