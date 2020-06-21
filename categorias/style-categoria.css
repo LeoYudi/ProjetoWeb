@@ -1,0 +1,44 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 1fr 5%;
+  row-gap: 3px;
+  column-gap: 0px;
+  grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  grid-area: header;
+  background-color: rgb(100,65,164);
+}
+
+.main{
+  grid-area: main;
+  background-color: black;
+}
+
+.footer{
+  grid-area: footer;
+  background-color: rgb(100,65,164);
+}
+
+.titulo{
+  color: white;
+  font-family: cursive; 
+  text-shadow: 3px 0px 0px black;
+  align-self: center;
+}

@@ -20,6 +20,8 @@ html, body {
 }
 
 .header{
+  display: flex;
+  justify-content: space-between;
   grid-area: header;
   background-color: rgb(100,65,164);
 }
@@ -55,7 +57,6 @@ html, body {
 }
 
 .titulo{
-  margin-left: 100px;
   color: white;
   font-family: cursive; 
   text-shadow: 3px 0px 0px black;
