@@ -90,6 +90,26 @@ html, body {
   grid-area: hot;
   background-color: rgb(66, 65, 65);
   border-radius: 25px;
+  display: grid;
+  column-gap: 5px;
+  padding: 5px;
+  grid-template-areas:
+    ". . . . . . . . . .";
+}
+
+.div-movie{
+  cursor: pointer;
+  border-radius: 25px;
+  width: 1fr;
+  border: 5px solid rgb(100,65,164);
+}
+
+.div-movie:hover{
+  border: 5px solid rgb(76, 36, 150);
+}
+
+.div-movie:active{
+  border: 5px solid rgb(66, 65, 65);
 }
 
 .categoria{
@@ -98,12 +118,15 @@ html, body {
   justify-content: center;
   background-color: rgb(66, 65, 65);
   border-radius: 25px;
+  border: 5px solid rgb(100,65,164);
 }
 
 .categoria:hover{
-  background-color: blue;
+  background-color: rgb(100,65,164);
+  border: 5px solid black;
 }
 
 .categoria:active{
-  background-color: red;
+  background-color: rgb(110,85,185);
+  border: 10px solid black;
 }
