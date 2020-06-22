@@ -29,6 +29,12 @@ html, body {
 .main{
   grid-area: main;
   background-color: black;
+  display: grid;
+  padding: 20px;
+  row-gap: 20px;
+  column-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .footer{
@@ -41,4 +47,25 @@ html, body {
   font-family: cursive; 
   text-shadow: 3px 0px 0px black;
   align-self: center;
+}
+
+.div-movie{
+  cursor: pointer;
+  border-radius: 25px;
+  width: 1fr;
+  border: 5px solid rgb(100,65,164);
+  background-color: rgb(66, 65, 65);
+}
+
+.div-movie:hover{
+  border: 5px solid rgb(76, 36, 150);
+}
+
+.div-movie:active{
+  border: 5px solid rgb(66, 65, 65);
+}
+
+a:visited, a:link {
+    text-decoration: inherit;
+    color: inherit;
 }

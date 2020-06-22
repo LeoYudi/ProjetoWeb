@@ -79,12 +79,7 @@ html, body {
   align-self: center;
 }
 
-.titulo-categoria{
-  color: white;
-  font-family: cursive; 
-  text-shadow: 3px 0px 0px black;
-  align-self: center;
-}
+
 
 .trending{
   grid-area: hot;
@@ -119,6 +114,8 @@ html, body {
   background-color: rgb(66, 65, 65);
   border-radius: 25px;
   border: 5px solid rgb(100,65,164);
+  text-decoration: inherit;
+  color: inherit;
 }
 
 .categoria:hover{
@@ -129,4 +126,11 @@ html, body {
 .categoria:active{
   background-color: rgb(110,85,185);
   border: 10px solid black;
+}
+
+.titulo-categoria{
+  color: white;
+  font-family: cursive; 
+  text-shadow: 3px 0px 0px black;
+  align-self: center;
 }
