@@ -33,7 +33,7 @@ html, body {
   padding: 20px;
   row-gap: 20px;
   column-gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
 
