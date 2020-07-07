@@ -2,6 +2,7 @@ html, body {
   padding: 0;
   margin: 0;
   background-color: black;
+  font-family: cursive;
 }
 
 .container {
@@ -9,7 +10,7 @@ html, body {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 20% 1fr;
+  grid-template-columns: 30% 1fr;
   grid-template-rows: 10% 1fr 5%;
   row-gap: 3px;
   column-gap: 0px;
@@ -45,13 +46,27 @@ html, body {
 .main{
   grid-area: main;
   background-color: black;
-  display: flex;
 }
 
 .titulo-filme{
   color: white;
   font-family: cursive;
   width: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+.sinopse{
+  color: white;
+  text-align: justify;
+  font-size: 1rem;
+  margin: 1rem 5rem;
+}
+
+.comment{
+  color: white;
+  margin: 0rem 5rem;
+  margin-top: 3rem;
 }
 
 .image{
@@ -72,10 +87,13 @@ html, body {
   height: 100%;
   border-radius: 0 5px 5px 0;
   position: absolute;
+}
+
+.side{
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50% 10% 10% 1fr;
-  row-gap: 1rem;
+  grid-template-rows: 60% 10% 10% 1fr;
   grid-template-areas: 
   "image"
   "like-and-dislike"
@@ -97,7 +115,7 @@ html, body {
   background-color: rgb(67, 17, 160);
 }
 
-.like-and-dislike{
+.like-dislike-favorite{
   grid-area: like-and-dislike;
   display: flex;
   justify-content: space-around;
@@ -128,4 +146,22 @@ html, body {
   color: white;
   font-family: cursive;
   margin: 0px 1rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+textarea{
+  margin-top: 5px;
+  width: 100%;
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+  padding: 10px;
+}
+
+.submit{
+  margin: 1rem 4rem;
+  width: auto; 
+  display: flex; 
+  justify-content: flex-end;
 }
