@@ -24,6 +24,7 @@ function verificaWidth() {
   else {
     if (document.querySelector('.openbtn')) {
       openNav();
+      document.querySelector(".main").style.marginLeft = "10px";
       let openbtn = document.querySelector('.openbtn');
       let closebtn = document.querySelector('.closebtn')
       openbtn.parentNode.removeChild(openbtn);
@@ -33,8 +34,8 @@ function verificaWidth() {
 }
 
 function openNav() {
-  document.querySelector(".sidebar").style.width = "250px";
-  document.querySelector(".main").style.marginLeft = "250px";
+  document.querySelector(".sidebar").style.width = "200px";
+  document.querySelector(".main").style.marginLeft = "200px";
 }
 
 function closeNav() {
