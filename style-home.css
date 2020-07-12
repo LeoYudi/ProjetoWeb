@@ -175,10 +175,10 @@ html, body {
     width: 100%;
     margin: 0;
     padding: 0;
-    padding-top: 126px;
   }
   
   .container{
+    position: static;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -257,5 +257,13 @@ html, body {
     width: 100px;
     height: 100px;
     margin: 5px;
+  }
+
+  #titulo1{
+    margin-top: 86px;
+  }
+
+  .footer{
+    font-size: 1.5rem;
   }
 }
