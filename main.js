@@ -19,6 +19,9 @@ function verificaWidth() {
       closebtn.classList.add("closebtn")
       closebtn.addEventListener("click", closeNav);
       sidebar.insertBefore(closebtn, sidebar.firstChild);
+
+      // let titulo = document.getElementById('titulo1');
+      // titulo.style.marginTop = 400 + menu.clientHeight + "px";
     }
   }
   else {
@@ -29,6 +32,9 @@ function verificaWidth() {
       let closebtn = document.querySelector('.closebtn')
       openbtn.parentNode.removeChild(openbtn);
       closebtn.parentNode.removeChild(closebtn);
+
+      // let titulo = document.getElementById('titulo1');
+      // titulo.style.marginTop = '0';
     }
   }
 }
@@ -40,5 +46,5 @@ function openNav() {
 
 function closeNav() {
   document.querySelector(".sidebar").style.width = "0";
-  document.querySelector(".main").style.marginLeft = "0";
+  document.querySelector(".main").style.marginLeft = "10px";
 }
