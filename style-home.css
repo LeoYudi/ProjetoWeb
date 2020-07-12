@@ -78,6 +78,12 @@ html, body {
 .footer{
   grid-area: footer;
   background-color: rgb(100,65,164);
+  font-family: cursive;
+  text-shadow: 3px 0px 0px black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .titulo{
@@ -159,15 +165,6 @@ html, body {
   font-family: cursive; 
   text-shadow: 3px 0px 0px black;
   align-self: center;
-}
-
-.footer{
-  font-family: cursive;
-  text-shadow: 3px 0px 0px black;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 @media screen and (max-width: 900px) {
