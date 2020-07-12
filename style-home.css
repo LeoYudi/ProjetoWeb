@@ -86,6 +86,7 @@ html, body {
   text-shadow: 3px 0px 0px black;
   align-self: center;
   text-decoration: none;
+  margin: 0 100px;
 }
 
 #titulo1{
@@ -170,9 +171,71 @@ html, body {
 }
 
 @media screen and (max-width: 900px) {
+  html, body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
   .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .header{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+  }
+
+  .titulo{
+    margin: 0;
+  }
+
+  .sidebar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .sidebar button {
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 1rem;
+    margin-left: 50px;
+  }
+
+  .closebtn{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: 0;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .closebtn:hover{
+    background-color: rgb(100,65,164);
+  }
+
+  .openbtn {
+    background-color: rgb(100,65,164);
+    color: white;
+    border: 0;
+    font-size: 2rem;
   }
 }
