@@ -43,6 +43,7 @@ html, body {
 }
 
 .sidebar-item{
+  cursor: pointer;
   font-family: cursive;
   color: white;
   background-color: black;
