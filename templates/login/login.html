@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static',filename='style-login.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style-login.css') }}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='icone.png') }}" type="image/x-icon"/>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Home</title>
@@ -22,9 +22,9 @@
         <div class="login">
             <form action="http://localhost:5000/login" method="POST">
                 <label for="email">Email</label>
-                <input type="text" id="email" placeholder="exemplo@mail.com">
+                <input type="text" id="email" name="email" placeholder="exemplo@mail.com">
                 <label for="senha">Senha</label>
-                <input type="password" id="senha" placeholder="senha">
+                <input type="password" id="senha" name="senha" placeholder="senha">
                 <input type="checkbox" id="lembrar">
                 <label for="lembrar">Lembrar senha</label>
                 <button>Login</button>
